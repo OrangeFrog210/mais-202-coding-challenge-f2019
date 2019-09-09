@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# please change the file path as appropriate.
 fIN1 = r"C:\Users\Yumika\Downloads\mais-202-coding-challenge-f2019-master\mais-202-coding-challenge-f2019-master\loan_data.csv"
 fIN2 = r"C:\Users\Yumika\Downloads\mais-202-coding-challenge-f2019-master\mais-202-coding-challenge-f2019-master\home_ownership_data.csv"
 
