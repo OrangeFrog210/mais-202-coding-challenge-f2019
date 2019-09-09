@@ -7,10 +7,8 @@ fIN2 = r"C:\Users\Yumika\Downloads\mais-202-coding-challenge-f2019-master\mais-2
 
 df1, df2 = pd.read_csv(fIN1), pd.read_csv(fIN2)
 
-# merging the two data frames based on member_id
-df3 = df1.merge(df2, left_on="member_id", right_on="member_id")
-# determining the average loan amount for each of the home ownership status
-df4 = df3.groupby('home_ownership', as_index=False)['loan_amnt'].mean()
+df3 = df1.merge(df2, left_on="member_id", right_on="member_id") # merging the two data frames based on member_id
+df4 = df3.groupby('home_ownership', as_index=False)['loan_amnt'].mean() # determining the average loan amount for each of the home ownership status
 print(df4)
 
 ax = df4.plot.bar(x="home_ownership", rot=0, title="Average loan amounts per home ownership")
